@@ -1,17 +1,17 @@
-import "./App.css"
-import styled from "styled-components"
-import Home from "./components/home"
-
-const Body = styled.div`
-  background-color: #1A1A1A;
-  height: 100vh;
-`
+import GlobalStyles from "./Components/GlobalStyles"
+import Header from "./Components/Header"
+import Home from "./Components/Home"
+import Footer from "./Components/Footer"
 
 function App() {
   return (
-    <Body>
+    <>
+      <GlobalStyles/>
+      <Header/>
       <Home/>
-    </Body>
+      <Footer/>
+    </>
+    
   )
 }
 

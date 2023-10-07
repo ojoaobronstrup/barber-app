@@ -1,27 +1,20 @@
 import styled from "styled-components"
 
-const Button = styled.button`
-    border: solid 2px #E95401;
-    background-color: transparent;
-    color: #FFFFFF;
-    border-radius: 10px;
-    width: 6em;
-`
-
-const Header = styled.header`
+const Images = styled.div`
     display: flex;
-    justify-content: space-between;
-    margin: 1em;
+    flex-direction: column;
+    align-items: center;
 `
-
 
 function Home () {
     return (
-        <Header>
-            <Button>Entrar</Button>
-            <img src="../public/images/logo-instagram.svg" alt="Logo do insta"></img>
-        </Header>
+        <>
+            <Images>
+                <img src="/images/logo-barbearia.svg"></img>
+                <img src="/images/barbeiro.svg"></img>
+            </Images>
+        </>
     )
 }
 
-export default Home;
+export default Home
