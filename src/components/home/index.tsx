@@ -1,22 +1,18 @@
 import styled from "styled-components"
 
 const Images = styled.div`
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 20vh 45vh;
-    align-items: center;
-    justify-items: center;
-`
-const Img = styled.img`
-    //transform: scale(0.8);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 50vh;
+    z-index: 1;
 `
 
 function Home () {
     return (
         <>
             <Images>
-                <img src="/images/logo-barbearia.svg"></img>
-                <Img src="/images/barbeiro.svg"></Img>
+                <img src="/images/barbeiro.svg"></img>
             </Images>
         </>
     )
