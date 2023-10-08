@@ -13,7 +13,7 @@ const Agende = styled.button`
     color: white;
     border-radius: 10px;
     width: 20em;
-    height: 4em;
+    height: 3.5em;
     z-index: 1;
     border-radius: 25px;
 `
@@ -34,7 +34,9 @@ function Footer () {
     return (
         <Foot>
             <h3>Um novo conceito de barbearia</h3>
-            <Agende>Agende seu horário</Agende>
+            <Agende onClick={()=>{
+                return((window.location.pathname="/unidade"))
+            }}>Agende seu horário</Agende>
             <Direitos>Todos os direitos reservados @ Thbarberclub</Direitos>
             <Contato>Contato</Contato>
         </Foot>
