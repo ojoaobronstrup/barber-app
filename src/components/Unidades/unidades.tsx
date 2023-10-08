@@ -4,7 +4,7 @@ import Footer from "../Footer"
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 68vh;
     align-items: center;
     justify-content: start;
     gap: 10em;

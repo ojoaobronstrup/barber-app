@@ -7,6 +7,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 10vh;
+    gap: 0.5em;
 `
 const Contato = styled.button`
     background-color: transparent;
