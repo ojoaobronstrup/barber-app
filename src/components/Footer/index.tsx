@@ -11,11 +11,13 @@ const Container = styled.div`
 `
 const Contato = styled.button`
     background-color: transparent;
-    color: white;
+    color: #FFFFFF;
     border: solid 2px #E95401;
     border-radius: 5px;
-    width: 7em;
+    height: 19px;
+    width: 84px;
     margin-bottom: 1em;
+    font-size: 10px;
 `
 const Direitos = styled.h3`
     color: #FFFFFF;
