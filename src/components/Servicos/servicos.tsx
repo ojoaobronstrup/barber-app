@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Footer from "../Footer"
+import {useState} from "react"
 
 const Secao = styled.section`
     display: flex;
@@ -45,14 +46,21 @@ const Botao = styled.button`
 `
 
 function Servicos () {
+    const [active, setActive] = useState(false)
     return (
         <>
             <Secao>
                 <h2>Selecione um serviço</h2>
                 <DivLinks>
                     <Links id="link" onClick={()=> {
-                        document.getElementById("link")!.style.backgroundColor = "#E95401"
-                        document.getElementById("selecionado")!.style.backgroundColor = "white"
+                        setActive(!active)
+                        if(active===false) {
+                            document.getElementById("link")!.style.backgroundColor = "#E95401"
+                            document.getElementById("selecionado")!.style.backgroundColor = "white"
+                        } else {
+                            document.getElementById("link")!.style.backgroundColor = "transparent"
+                            document.getElementById("selecionado")!.style.backgroundColor = "transparent"
+                        }
                     }}>
                         CORTE <Selecionado id="selecionado"></Selecionado>
                     </Links>
