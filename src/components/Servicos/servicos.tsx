@@ -37,9 +37,9 @@ const Selecionado = styled.div`
     right: 5px;
 `
 const Botao = styled.button`
-    background-color: #8B3200;
+    background-color: #E95401;
     border: 0;
-    color: #A4A4A4;
+    color: white;
     border-radius: 10px;
     height: 45px;
     width: 197px;
@@ -101,7 +101,7 @@ function Servicos () {
                         SOBRANCELHA <Selecionado id="sobrancelha-sel"></Selecionado>
                     </Links>
                 </DivLinks>
-                <Botao>CONFIRMAR</Botao>
+                <Botao onClick={() => {window.location.pathname += "/profissional"}}>CONFIRMAR</Botao>
             </Secao>
             <Footer/>
         </>

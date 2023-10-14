@@ -4,6 +4,7 @@ import Home from "./Components/Home"
 import Agendar from "./Components/Agendar"
 import Unidades from "./Components/Unidades/unidades"
 import Servicos from "./Components/Servicos/servicos"
+import Profissional from "./Components/Profissional"
 
 function App() {
   if(window.location.pathname === "/") {
@@ -23,15 +24,23 @@ function App() {
         <Unidades/>
       </>
     )
-  } else if (window.location.pathname === "/unidade/servico")
+  } else if (window.location.pathname === "/unidade/servico") {
   return(
     <>
       <GlobalStyles/>
       <Header/>
       <Servicos/>
     </>
-
   )
-}
+} else if (window.location.pathname === "/unidade/servico/profissional") {
+  return (
+    <>
+      <GlobalStyles/>
+      <Header/>
+      <Profissional/>
+    </>
+  )
+}   
+} 
 
 export default App
