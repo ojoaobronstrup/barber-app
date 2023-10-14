@@ -52,26 +52,53 @@ function Servicos () {
             <Secao>
                 <h2>Selecione um serviço</h2>
                 <DivLinks>
-                    <Links id="link" onClick={()=> {
+                <Links id="corte" onClick={()=> {
                         setActive(!active)
                         if(active===false) {
-                            document.getElementById("link")!.style.backgroundColor = "#E95401"
-                            document.getElementById("selecionado")!.style.backgroundColor = "white"
+                            document.getElementById("corte")!.style.backgroundColor = "#E95401"
+                            document.getElementById("corte-sel")!.style.backgroundColor = "white"
                         } else {
-                            document.getElementById("link")!.style.backgroundColor = "transparent"
-                            document.getElementById("selecionado")!.style.backgroundColor = "transparent"
+                            document.getElementById("corte")!.style.backgroundColor = "transparent"
+                            document.getElementById("corte-sel")!.style.backgroundColor = "transparent"
                         }
                     }}>
-                        CORTE <Selecionado id="selecionado"></Selecionado>
+                        CORTE <Selecionado id="corte-sel"></Selecionado>
                     </Links>
-                    <Links id="link"> 
-                        BARBA <Selecionado></Selecionado>
+                    <Links id="barba" onClick={()=> {
+                        setActive(!active)
+                        if(active===false) {
+                            document.getElementById("barba")!.style.backgroundColor = "#E95401"
+                            document.getElementById("barba-sel")!.style.backgroundColor = "white"
+                        } else {
+                            document.getElementById("barba")!.style.backgroundColor = "transparent"
+                            document.getElementById("barba-sel")!.style.backgroundColor = "transparent"
+                        }
+                    }}>
+                        BARBA <Selecionado id="barba-sel"></Selecionado>
                     </Links>
-                    <Links id="link"> 
-                        COMBO <Selecionado></Selecionado>
+                    <Links id="combo" onClick={()=> {
+                        setActive(!active)
+                        if(active===false) {
+                            document.getElementById("combo")!.style.backgroundColor = "#E95401"
+                            document.getElementById("combo-sel")!.style.backgroundColor = "white"
+                        } else {
+                            document.getElementById("combo")!.style.backgroundColor = "transparent"
+                            document.getElementById("combo-sel")!.style.backgroundColor = "transparent"
+                        }
+                    }}>
+                        COMBO <Selecionado id="combo-sel"></Selecionado>
                     </Links>
-                    <Links id="link"> 
-                        SOBRANCELHA <Selecionado></Selecionado>
+                    <Links id="sobrancelha" onClick={()=> {
+                        setActive(!active)
+                        if(active===false) {
+                            document.getElementById("sobrancelha")!.style.backgroundColor = "#E95401"
+                            document.getElementById("sobrancelha-sel")!.style.backgroundColor = "white"
+                        } else {
+                            document.getElementById("sobrancelha")!.style.backgroundColor = "transparent"
+                            document.getElementById("sobrancelha-sel")!.style.backgroundColor = "transparent"
+                        }
+                    }}>
+                        SOBRANCELHA <Selecionado id="sobrancelha-sel"></Selecionado>
                     </Links>
                 </DivLinks>
                 <Botao>CONFIRMAR</Botao>
