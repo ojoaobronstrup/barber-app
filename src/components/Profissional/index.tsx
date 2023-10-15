@@ -15,6 +15,23 @@ const Imagens = styled.div`
     flex-wrap: wrap;
     gap: 10px;
 `
+const Img = styled.img`
+    position: relative;
+    box-shadow: inset 0 -20px 15px rgba(233, 84, 1, 1);
+    border-radius: 10px 10px 0 10px;
+    cursor: pointer;
+`
+const Legenda = styled.figcaption`
+    position: relative;
+    bottom: 25px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 14px;
+`
 
 function Profissional () {
     return (
@@ -22,10 +39,30 @@ function Profissional () {
             <Secao>
                 <h2>Selecione um profissional</h2>
                 <Imagens>
-                    <img src="/images/profissional.svg" alt="Foto de um barbeiro" />
-                    <img src="/images/profissional.svg" alt="Foto de um barbeiro" />
-                    <img src="/images/profissional.svg" alt="Foto de um barbeiro" />
-                    <img src="/images/profissional.svg" alt="Foto de um barbeiro" />
+                    <figure>
+                        <Img src="/images/profissional.svg" alt="Foto de um barbeiro" onClick={()=>{
+                            window.location.pathname += "/data"
+                        }}/>
+                        <Legenda>Primeiro Barbeiro</Legenda>
+                    </figure>
+                    <figure>
+                        <Img src="/images/profissional.svg" alt="Foto de um barbeiro" onClick={()=>{
+                            window.location.pathname += "/data"
+                        }}/>
+                        <Legenda>Segundo Barbeiro</Legenda>
+                    </figure>
+                    <figure>
+                        <Img src="/images/profissional.svg" alt="Foto de um barbeiro" onClick={()=>{
+                            window.location.pathname += "/data"
+                        }}/>
+                        <Legenda>Terceiro Barbeiro</Legenda>
+                    </figure>
+                    <figure>
+                        <Img src="/images/profissional.svg" alt="Foto de um barbeiro" onClick={()=>{
+                            window.location.pathname += "/data"
+                        }}/>
+                        <Legenda>Quarto Barbeiro</Legenda>
+                    </figure>
                 </Imagens>
             </Secao>
             <Footer/>
