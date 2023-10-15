@@ -14,7 +14,9 @@ function Header () {
     return (
         <Head>
             <Img src="/images/profile-icon.svg"></Img>
-            <img src="/images/logo-barbearia.svg"></img>
+            <img src="/images/logo-barbearia.svg" onClick={()=>{
+                window.location.pathname="/"
+            }}></img>
             <Img src="/images/logo-instagram.svg"></Img>
         </Head>
     )
