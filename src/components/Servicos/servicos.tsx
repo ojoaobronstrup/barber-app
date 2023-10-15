@@ -36,7 +36,7 @@ const Selecionado = styled.div`
     position: absolute;
     right: 5px;
 `
-const Botao = styled.button`
+export const Botao = styled.button`
     background-color: #E95401;
     border: 0;
     color: white;

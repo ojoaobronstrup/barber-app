@@ -5,6 +5,7 @@ import Agendar from "./Components/Agendar"
 import Unidades from "./Components/Unidades/unidades"
 import Servicos from "./Components/Servicos/servicos"
 import Profissional from "./Components/Profissional"
+import Data from "./Components/Data"
 
 function App() {
   if(window.location.pathname === "/") {
@@ -40,7 +41,15 @@ function App() {
       <Profissional/>
     </>
   )
-}   
+} else if (window.location.pathname === "/unidade/servico/profissional/data") {
+  return (
+    <>
+      <GlobalStyles/>
+      <Header/>
+      <Data/>
+    </>
+  )
+}
 } 
 
 export default App
