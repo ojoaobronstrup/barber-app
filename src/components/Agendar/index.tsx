@@ -17,6 +17,7 @@ const Agende = styled.button`
     height: 3.5em;
     z-index: 1;
     border-radius: 25px;
+    border: none;
 `
 
 function Agendar () {
