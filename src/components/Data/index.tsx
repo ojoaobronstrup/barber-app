@@ -17,7 +17,9 @@ function Data () {
         <Secao>
             <h2>Selecione uma data</h2>
             <input type='date'></input>
-            <Botao>CONFIRMAR</Botao>
+            <Botao onClick={()=>{
+              window.location.pathname+="/horario"
+            }}>CONFIRMAR</Botao>
         </Secao>
         <Footer/>
     </>
