@@ -34,7 +34,7 @@ function Unidades () {
             <Container>
                 <Titulo>Selecione uma unidade</Titulo>
                 <LocaisContainer>
-                    <Locais onClick={()=> {console.log(window.location.pathname+="/servico")}}>Santa Maria</Locais>
+                    <Locais onClick={()=> {window.location.pathname+="/servico"}}>Santa Maria</Locais>
                     <Locais onClick={()=> {window.location.pathname+="/servico"}}>Passo Fundo</Locais>
                     <Locais onClick={()=> {window.location.pathname+="/servico"}}>Ijuí</Locais>
                 </LocaisContainer>
