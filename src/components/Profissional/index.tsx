@@ -6,7 +6,7 @@ const Secao = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 65vh;
+    height: 68vh;
 `
 const Imagens = styled.div`
     display: flex;
