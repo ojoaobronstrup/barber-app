@@ -6,6 +6,7 @@ import Unidades from "./Components/Unidades/unidades"
 import Servicos from "./Components/Servicos/servicos"
 import Profissional from "./Components/Profissional"
 import Data from "./Components/Data"
+import Horario from "./Components/Horario"
 
 function App() {
   if(window.location.pathname === "/") {
@@ -47,6 +48,14 @@ function App() {
       <GlobalStyles/>
       <Header/>
       <Data/>
+    </>
+  )
+} else if (window.location.pathname === "/unidade/servico/profissional/data/horario") {
+  return (
+    <>
+      <GlobalStyles/>
+      <Header/>
+      <Horario/>
     </>
   )
 }
