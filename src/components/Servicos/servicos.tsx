@@ -46,15 +46,20 @@ export const Botao = styled.button`
 `
 
 function Servicos () {
-    const [active, setActive] = useState(false)
+    
+    const [corte, setCorte] = useState(false)
+    const [barba, setBarba] = useState(false)
+    const [combo, setCombo] = useState(false)
+    const [sobrancelha, setSobrancelha] = useState(false)
+
     return (
         <>
             <Secao>
                 <h2>Selecione um serviço</h2>
                 <DivLinks>
                 <Links id="corte" onClick={()=> {
-                        setActive(!active)
-                        if(active===false) {
+                        setCorte(!corte)
+                        if(corte===false) {
                             document.getElementById("corte")!.style.backgroundColor = "#E95401"
                             document.getElementById("corte-sel")!.style.backgroundColor = "white"
                         } else {
@@ -65,8 +70,8 @@ function Servicos () {
                         CORTE <Selecionado id="corte-sel"></Selecionado>
                     </Links>
                     <Links id="barba" onClick={()=> {
-                        setActive(!active)
-                        if(active===false) {
+                        setBarba(!barba)
+                        if(barba===false) {
                             document.getElementById("barba")!.style.backgroundColor = "#E95401"
                             document.getElementById("barba-sel")!.style.backgroundColor = "white"
                         } else {
@@ -77,8 +82,8 @@ function Servicos () {
                         BARBA <Selecionado id="barba-sel"></Selecionado>
                     </Links>
                     <Links id="combo" onClick={()=> {
-                        setActive(!active)
-                        if(active===false) {
+                        setCombo(!combo)
+                        if(combo===false) {
                             document.getElementById("combo")!.style.backgroundColor = "#E95401"
                             document.getElementById("combo-sel")!.style.backgroundColor = "white"
                         } else {
@@ -89,8 +94,8 @@ function Servicos () {
                         COMBO <Selecionado id="combo-sel"></Selecionado>
                     </Links>
                     <Links id="sobrancelha" onClick={()=> {
-                        setActive(!active)
-                        if(active===false) {
+                        setSobrancelha(!sobrancelha)
+                        if(sobrancelha===false) {
                             document.getElementById("sobrancelha")!.style.backgroundColor = "#E95401"
                             document.getElementById("sobrancelha-sel")!.style.backgroundColor = "white"
                         } else {
