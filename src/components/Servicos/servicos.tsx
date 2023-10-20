@@ -62,6 +62,7 @@ function Servicos () {
                         if(corte===false) {
                             document.getElementById("corte")!.style.backgroundColor = "#E95401"
                             document.getElementById("corte-sel")!.style.backgroundColor = "white"
+                            localStorage.setItem("Serviço", document.getElementById('corte')!.innerText)
                         } else {
                             document.getElementById("corte")!.style.backgroundColor = "transparent"
                             document.getElementById("corte-sel")!.style.backgroundColor = "transparent"
@@ -74,6 +75,7 @@ function Servicos () {
                         if(barba===false) {
                             document.getElementById("barba")!.style.backgroundColor = "#E95401"
                             document.getElementById("barba-sel")!.style.backgroundColor = "white"
+                            localStorage.setItem("Serviço", document.getElementById('barba')!.innerText)
                         } else {
                             document.getElementById("barba")!.style.backgroundColor = "transparent"
                             document.getElementById("barba-sel")!.style.backgroundColor = "transparent"
