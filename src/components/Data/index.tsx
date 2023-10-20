@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Footer from '../Footer'
 import { Botao } from '../Servicos/servicos'
+import { useState } from "react";
 
 
 const Secao = styled.section`
@@ -11,21 +12,32 @@ const Secao = styled.section`
     justify-content: space-around;
 `
 
-function Data () {
+function Data() {
+  const [data, setData] = useState("");
+
   return (
     <>
-        <Secao>
-            <h2>Selecione uma data</h2>
-            <input type='date'></input>
-            <Botao onClick={()=>{
-              window.location.pathname+="/horario"
-            }}>CONFIRMAR</Botao>
-        </Secao>
-        <Footer/>
+      <Secao>
+        <h2>Selecione uma data</h2>
+        <input
+          id="data"
+          type="date"
+          onChange={(e) => {
+            setData(e.target.value)
+          }}
+        />
+        <Botao onClick={() => {
+          window.location.pathname += "/horario";
+          localStorage.setItem("data", data)
+        }}>
+          CONFIRMAR
+        </Botao>
+      </Secao>
+      <Footer />
     </>
-
-  )
+  );
 }
 
-export default Data
+export default Data;
+
 

@@ -34,15 +34,18 @@ function Unidades() {
             <Container>
                 <Titulo>Selecione uma unidade</Titulo>
                 <LocaisContainer>
-                    <Locais id="sm" onClick={()=> {
+                    <Locais id='sm' onClick={()=> {
                         window.location.pathname+="/servico"
-                        localStorage.setItem("Unidade", document.getElementById('sm')!.innerText)
+                        localStorage.setItem("unidade", document.getElementById('sm')!.innerText)
                     }}>Santa Maria</Locais>
-                    <Locais id="pf" onClick={()=> {
+                    <Locais id='pf' onClick={()=> {
                         window.location.pathname+="/servico"
-                        localStorage.setItem("Unidade", document.getElementById('pf')!.innerText)
+                        localStorage.setItem("unidade", document.getElementById('pf')!.innerText)
                     }}>Passo Fundo</Locais>
-                    <Locais onClick={()=> {window.location.pathname+="/servico"}}>Ijuí</Locais>
+                    <Locais id='ij' onClick={()=> {
+                        window.location.pathname+="/servico"
+                        localStorage.setItem("unidade", document.getElementById('ij')!.innerText)
+                    }}>Ijuí</Locais>
                 </LocaisContainer>
             </Container>
             <Footer/>

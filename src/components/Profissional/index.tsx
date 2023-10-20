@@ -42,26 +42,34 @@ function Profissional () {
                     <figure>
                         <Img src="/images/profissional.svg" alt="Foto de um barbeiro" onClick={()=>{
                             window.location.pathname += "/data"
+                            const primeiro:string = document.getElementById("primeiro")!.innerHTML
+                            localStorage.setItem("barbeiro", primeiro)
                         }}/>
-                        <Legenda>Primeiro Barbeiro</Legenda>
+                        <Legenda id="primeiro">Primeiro Barbeiro</Legenda>
                     </figure>
                     <figure>
                         <Img src="/images/profissional.svg" alt="Foto de um barbeiro" onClick={()=>{
                             window.location.pathname += "/data"
+                            const segundo:string = document.getElementById("segundo")!.innerHTML
+                            localStorage.setItem("barbeiro", segundo)
                         }}/>
-                        <Legenda>Segundo Barbeiro</Legenda>
+                        <Legenda id="segundo" >Segundo Barbeiro</Legenda>
                     </figure>
                     <figure>
                         <Img src="/images/profissional.svg" alt="Foto de um barbeiro" onClick={()=>{
                             window.location.pathname += "/data"
+                            const terceiro:string = document.getElementById("terceiro")!.innerHTML
+                            localStorage.setItem("barbeiro", terceiro)
                         }}/>
-                        <Legenda>Terceiro Barbeiro</Legenda>
+                        <Legenda id="terceiro" >Terceiro Barbeiro</Legenda>
                     </figure>
                     <figure>
                         <Img src="/images/profissional.svg" alt="Foto de um barbeiro" onClick={()=>{
                             window.location.pathname += "/data"
+                            const quarto:string = document.getElementById("quarto")!.innerHTML
+                            localStorage.setItem("barbeiro", quarto)
                         }}/>
-                        <Legenda>Quarto Barbeiro</Legenda>
+                        <Legenda id="quarto" >Quarto Barbeiro</Legenda>
                     </figure>
                 </Imagens>
             </Secao>

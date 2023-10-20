@@ -49,7 +49,7 @@ function Servicos () {
     
     const [corte, setCorte] = useState(false)
     const [barba, setBarba] = useState(false)
-    const [combo, setCombo] = useState(false)
+    const [platinacao, setPlatinacao] = useState(false)
     const [sobrancelha, setSobrancelha] = useState(false)
 
     return (
@@ -62,10 +62,11 @@ function Servicos () {
                         if(corte===false) {
                             document.getElementById("corte")!.style.backgroundColor = "#E95401"
                             document.getElementById("corte-sel")!.style.backgroundColor = "white"
-                            localStorage.setItem("Serviço", document.getElementById('corte')!.innerText)
+                            localStorage.setItem("servicoCorte", document.getElementById('corte')!.innerText)
                         } else {
                             document.getElementById("corte")!.style.backgroundColor = "transparent"
                             document.getElementById("corte-sel")!.style.backgroundColor = "transparent"
+                            localStorage.removeItem("servicoCorte")
                         }
                     }}>
                         CORTE <Selecionado id="corte-sel"></Selecionado>
@@ -75,34 +76,39 @@ function Servicos () {
                         if(barba===false) {
                             document.getElementById("barba")!.style.backgroundColor = "#E95401"
                             document.getElementById("barba-sel")!.style.backgroundColor = "white"
-                            localStorage.setItem("Serviço", document.getElementById('barba')!.innerText)
+                            localStorage.setItem("servicoBarba", document.getElementById('barba')!.innerText)
                         } else {
                             document.getElementById("barba")!.style.backgroundColor = "transparent"
                             document.getElementById("barba-sel")!.style.backgroundColor = "transparent"
+                            localStorage.removeItem("servicoBarba")
                         }
                     }}>
                         BARBA <Selecionado id="barba-sel"></Selecionado>
                     </Links>
-                    <Links id="combo" onClick={()=> {
-                        setCombo(!combo)
-                        if(combo===false) {
-                            document.getElementById("combo")!.style.backgroundColor = "#E95401"
-                            document.getElementById("combo-sel")!.style.backgroundColor = "white"
+                    <Links id="platinacao" onClick={()=> {
+                        setPlatinacao(!platinacao)
+                        if(platinacao===false) {
+                            document.getElementById("platinacao")!.style.backgroundColor = "#E95401"
+                            document.getElementById("platinacao-sel")!.style.backgroundColor = "white"
+                            localStorage.setItem("servicoPlatinacao", document.getElementById("platinacao")!.innerText)
                         } else {
-                            document.getElementById("combo")!.style.backgroundColor = "transparent"
-                            document.getElementById("combo-sel")!.style.backgroundColor = "transparent"
+                            document.getElementById("platinacao")!.style.backgroundColor = "transparent"
+                            document.getElementById("platinacao-sel")!.style.backgroundColor = "transparent"
+                            localStorage.removeItem("servicoPlatinacao")
                         }
                     }}>
-                        COMBO <Selecionado id="combo-sel"></Selecionado>
+                        PLATINAÇÃO <Selecionado id="platinacao-sel"></Selecionado>
                     </Links>
                     <Links id="sobrancelha" onClick={()=> {
                         setSobrancelha(!sobrancelha)
                         if(sobrancelha===false) {
                             document.getElementById("sobrancelha")!.style.backgroundColor = "#E95401"
                             document.getElementById("sobrancelha-sel")!.style.backgroundColor = "white"
+                            localStorage.setItem("servicoSobrancelha", document.getElementById('sobrancelha')!.innerText)
                         } else {
                             document.getElementById("sobrancelha")!.style.backgroundColor = "transparent"
                             document.getElementById("sobrancelha-sel")!.style.backgroundColor = "transparent"
+                            localStorage.removeItem("servicoSobrancelha")
                         }
                     }}>
                         SOBRANCELHA <Selecionado id="sobrancelha-sel"></Selecionado>
