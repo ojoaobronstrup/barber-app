@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Footer from "../Footer"
+import { useEffect } from "react"
 
 const Foot = styled.div`
     display: flex;
@@ -21,10 +22,14 @@ const Agende = styled.button`
 `
 
 function Agendar () {
+    useEffect(() => {
+        localStorage.clear()
+    })
+
     return (
         <Foot>
             <h3>Um novo conceito de barbearia</h3>
-            <Agende onClick={()=>{
+            <Agende onClick={()=>{ 
                 return((window.location.pathname="/unidade"))
             }}>Agende seu horário</Agende>
             <Footer/>
