@@ -31,8 +31,6 @@ const Hora = styled.h2`
 `
 
 function Horario () {
-    const [active, setActive] = useState(false)
-
     return (
         <>
             <Secao>
@@ -40,106 +38,69 @@ function Horario () {
                 <Container>
                     <Horarios>
                         <Hora id="oito" onClick={()=>{
-                            setActive(!active)
-                            if(active===true) {
-                                document.getElementById('oito')!.style.backgroundColor = "#E95401"
-                            } else {
-                                document.getElementById('oito')!.style.backgroundColor = "transparent"
-                            }
+                            const horario = document.getElementById("oito")!.textContent!
+                            localStorage.setItem("horario", horario)
+                            window.location.pathname += "/agendamento"
                         }}>08:00</Hora>
                         <Hora id="nove" onClick={()=>{
-                            setActive(!active)
-                            if(active===true) {
-                                document.getElementById('nove')!.style.backgroundColor = "#E95401"
-                            } else {
-                                document.getElementById('nove')!.style.backgroundColor = "transparent"
-                            }
+                            const horario = document.getElementById("nove")!.textContent!
+                            localStorage.setItem("horario", horario)
+                            window.location.pathname += "/agendamento"
                         }}>09:00</Hora>
                         <Hora id="dez" onClick={()=>{
-                            setActive(!active)
-                            if(active===true) {
-                                document.getElementById('dez')!.style.backgroundColor = "#E95401"
-                            } else {
-                                document.getElementById('dez')!.style.backgroundColor = "transparent"
-                            }
+                            const horario = document.getElementById("dez")!.textContent!
+                            localStorage.setItem("horario", horario)
+                            window.location.pathname += "/agendamento"
                         }}>10:00</Hora>
                         <Hora id="onze" onClick={()=>{
-                            setActive(!active)
-                            if(active===true) {
-                                document.getElementById('onze')!.style.backgroundColor = "#E95401"
-                            } else {
-                                document.getElementById('onze')!.style.backgroundColor = "transparent"
-                            }
+                            const horario = document.getElementById("onze")!.textContent!
+                            localStorage.setItem("horario", horario)
+                            window.location.pathname += "/agendamento"
                         }}>11:00</Hora>
                         <Hora id="treze" onClick={()=>{
-                            setActive(!active)
-                            if(active===true) {
-                                document.getElementById('treze')!.style.backgroundColor = "#E95401"
-                            } else {
-                                document.getElementById('treze')!.style.backgroundColor = "transparent"
-                            }
+                            const horario = document.getElementById("treze")!.textContent!
+                            localStorage.setItem("horario", horario)
+                            window.location.pathname += "/agendamento"
                         }}>13:00</Hora>
                         <Hora id="quatorze" onClick={()=>{
-                            setActive(!active)
-                            if(active===true) {
-                                document.getElementById('quatorze')!.style.backgroundColor = "#E95401"
-                            } else {
-                                document.getElementById('quatorze')!.style.backgroundColor = "transparent"
-                            }
+                            const horario = document.getElementById("quatorze")!.textContent!
+                            localStorage.setItem("horario", horario)
+                            window.location.pathname += "/agendamento"
                         }}>14:00</Hora>
                     </Horarios>
                     <Horarios>
                         <Hora id="quinze" onClick={()=>{
-                            setActive(!active)
-                            if(active===true) {
-                                document.getElementById('quinze')!.style.backgroundColor = "#E95401"
-                            } else {
-                                document.getElementById('quinze')!.style.backgroundColor = "transparent"
-                            }
+                            const horario = document.getElementById("quinze")!.textContent!
+                            localStorage.setItem("horario", horario)
+                            window.location.pathname += "/agendamento"
                         }}>15:00</Hora>
                         <Hora id="dezesseis" onClick={()=>{
-                            setActive(!active)
-                            if(active===true) {
-                                document.getElementById('dezesseis')!.style.backgroundColor = "#E95401"
-                            } else {
-                                document.getElementById('dezesseis')!.style.backgroundColor = "transparent"
-                            }
+                            const horario = document.getElementById("dezesseis")!.textContent!
+                            localStorage.setItem("horario", horario)
+                            window.location.pathname += "/agendamento"
                         }}>16:00</Hora>
                         <Hora id="dezessete" onClick={()=>{
-                            setActive(!active)
-                            if(active===true) {
-                                document.getElementById('dezessete')!.style.backgroundColor = "#E95401"
-                            } else {
-                                document.getElementById('dezessete')!.style.backgroundColor = "transparent"
-                            }
+                            const horario = document.getElementById("dezessete")!.textContent!
+                            localStorage.setItem("horario", horario)
+                            window.location.pathname += "/agendamento"
                         }}>17:00</Hora>
                         <Hora id="dezoito" onClick={()=>{
-                            setActive(!active)
-                            if(active===true) {
-                                document.getElementById('dezoito')!.style.backgroundColor = "#E95401"
-                            } else {
-                                document.getElementById('dezoito')!.style.backgroundColor = "transparent"
-                            }
+                            const horario = document.getElementById("dezoito")!.textContent!
+                            localStorage.setItem("horario", horario)
+                            window.location.pathname += "/agendamento"
                         }}>18:00</Hora>
                         <Hora id="dezenove" onClick={()=>{
-                            setActive(!active)
-                            if(active===true) {
-                                document.getElementById('dezenove')!.style.backgroundColor = "#E95401"
-                            } else {
-                                document.getElementById('dezenove')!.style.backgroundColor = "transparent"
-                            }
+                            const horario = document.getElementById("dezenove")!.textContent!
+                            localStorage.setItem("horario", horario)
+                            window.location.pathname += "/agendamento"
                         }}>19:00</Hora>
                         <Hora id="vinte" onClick={()=>{
-                            setActive(!active)
-                            if(active===true) {
-                                document.getElementById('vinte')!.style.backgroundColor = "#E95401"
-                            } else {
-                                document.getElementById('vinte')!.style.backgroundColor = "transparent"
-                            }
+                            const horario = document.getElementById("vinte")!.textContent!
+                            localStorage.setItem("horario", horario)
+                            window.location.pathname += "/agendamento"
                         }}>20:00</Hora>
                     </Horarios>
                 </Container>
-                <Botao>CONFIRMAR</Botao>
             </Secao>
             <Footer/>
         </>
