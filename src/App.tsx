@@ -8,6 +8,7 @@ import Profissional from "./Components/Profissional"
 import Data from "./Components/Data"
 import Horario from "./Components/Horario"
 import Agendamento from "./Components/Agendamento"
+import Agendado from "./Components/Agendado"
 
 function App() {
   if(window.location.pathname === "/") {
@@ -65,6 +66,14 @@ function App() {
       <GlobalStyles/>
       <Header/>
       <Agendamento/>
+    </>
+  )
+} else if (window.location.pathname === "/unidade/servico/profissional/data/horario/agendamento/agendado") {
+  return (
+    <>
+      <GlobalStyles/>
+      <Header/>
+      <Agendado/>
     </>
   )
 }
