@@ -23,6 +23,8 @@ const GlobalStyles = createGlobalStyle`
         background-color: #1A1A1A;
         color: white;
         font-family: 'Poppins', sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
     }
     article, aside, details, figcaption, figure, 
     footer, header, hgroup, menu, nav, section {

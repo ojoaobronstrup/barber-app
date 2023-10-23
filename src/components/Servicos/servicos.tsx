@@ -17,7 +17,7 @@ const DivLinks = styled.div`
     gap: 1em;
 `
 const Links = styled.a`
-    border: solid 0.2em #E95401;
+    border: solid 3px #E95401;
     width: 325px;
     height: 44px;
     border-radius: 25px;
@@ -31,7 +31,7 @@ const Links = styled.a`
 `
 const Selecionado = styled.div`
     display: block;
-    border: solid 0.2em #E95401;
+    border: solid 3px #E95401;
     border-radius: 100%;
     height: 28px;
     width: 28px;
