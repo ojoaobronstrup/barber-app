@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { Botao } from "../Servicos/servicos"
 import Footer from "../Footer"
 import { useState } from "react"
+import { Titulo } from "../Unidades/unidades"
 
 const Secao = styled.section`
     display: flex;
@@ -28,13 +29,14 @@ const Hora = styled.h2`
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
 `
 
 function Horario () {
     return (
         <>
             <Secao>
-                <h1>Selecione um horário</h1>
+                <Titulo>Selecione um horário</Titulo>
                 <Container>
                     <Horarios>
                         <Hora id="oito" onClick={()=>{

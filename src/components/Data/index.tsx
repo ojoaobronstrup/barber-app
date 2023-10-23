@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Footer from '../Footer'
 import { Botao } from '../Servicos/servicos'
 import { useState } from "react";
+import { Titulo } from '../Unidades/unidades';
 
 
 const Secao = styled.section`
@@ -18,7 +19,7 @@ function Data() {
   return (
     <>
       <Secao>
-        <h2>Selecione uma data</h2>
+        <Titulo>Selecione uma data</Titulo>
         <input
           id="data"
           type="date"

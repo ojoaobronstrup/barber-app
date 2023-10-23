@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import Footer from "../Footer"
 import { Botao } from "../Servicos/servicos"
+import { Titulo } from "../Unidades/unidades"
 
 const Secao = styled.section`
     height: 68vh;
@@ -22,14 +23,15 @@ const Agendamentos = styled.h2`
     display: flex;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase;
+    text-transform: lowercase;
+    font-weight: 700;
 `
 
 function Agendamento () {
     return (
         <>
             <Secao>
-                <h1>O seu agendamento:</h1>
+                <Titulo>O seu agendamento:</Titulo>
                 <Valores>
                     <Agendamentos>Data: {localStorage.getItem("data")}</Agendamentos>
                     <Agendamentos>Unidade: {localStorage.getItem("unidade")}</Agendamentos>

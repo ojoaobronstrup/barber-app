@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import Footer from "../Footer"
 import {useState} from "react"
+import { Titulo } from "../Unidades/unidades"
 
 const Secao = styled.section`
     display: flex;
@@ -25,6 +26,8 @@ const Links = styled.a`
     align-items: center;
     justify-content: center;
     position: relative;
+    font-size: 20px;
+    font-weight: 700;
 `
 const Selecionado = styled.div`
     display: block;
@@ -43,6 +46,9 @@ export const Botao = styled.button`
     border-radius: 10px;
     height: 45px;
     width: 197px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
 `
 
 function Servicos () {
@@ -55,7 +61,7 @@ function Servicos () {
     return (
         <>
             <Secao>
-                <h2>Selecione um serviço</h2>
+                <Titulo>Selecione um serviço</Titulo>
                 <DivLinks>
                 <Links id="corte" onClick={()=> {
                         setCorte(!corte)

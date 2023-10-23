@@ -9,8 +9,9 @@ const Container = styled.div`
     justify-content: start;
     gap: 10em;
 `
-const Titulo = styled.h2`
-    font-size: 1.5em;
+export const Titulo = styled.h1`
+    font-size: 24px;
+    font-weight: 900;
 `
 const LocaisContainer = styled.div`
     display: flex;
@@ -19,13 +20,15 @@ const LocaisContainer = styled.div`
     gap: 1em;
 `
 const Locais = styled.a`
-    border: solid 0.2em #E95401;
+    border: solid 3px #E95401;
     border-radius: 25px;
-    width: 14em;
-    height: 2.5em;
+    width: 282px;
+    height: 49px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
+    font-size: 20px;
 `
 
 function Unidades() {

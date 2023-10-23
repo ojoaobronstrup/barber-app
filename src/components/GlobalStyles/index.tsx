@@ -22,29 +22,35 @@ const GlobalStyles = createGlobalStyle`
         vertical-align: baseline;
         background-color: #1A1A1A;
         color: white;
+        font-family: 'Poppins', sans-serif;
     }
     article, aside, details, figcaption, figure, 
     footer, header, hgroup, menu, nav, section {
         display: block;
+        font-family: 'Poppins', sans-serif;
     }
     body {
         line-height: 1;
+        font-family: 'Poppins', sans-serif;
     }
     ol, ul {
         list-style: none;
+        font-family: 'Poppins', sans-serif;
     }
     blockquote, q {
         quotes: none;
+        font-family: 'Poppins', sans-serif;
     }
     blockquote:before, blockquote:after,
     q:before, q:after {
         content: '';
         content: none;
+        font-family: 'Poppins', sans-serif;
     }
     table {
         border-collapse: collapse;
         border-spacing: 0;
-
+        font-family: 'Poppins', sans-serif;
     }
 `
 

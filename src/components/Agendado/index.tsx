@@ -1,5 +1,6 @@
 import Footer from "../Footer"
 import styled from "styled-components"
+import { Titulo } from "../Unidades/unidades"
 
 const Secao = styled.section`
     height: 68vh;
@@ -14,13 +15,15 @@ const Botao = styled.button`
     width: 197px;
     height: 45px;
     border-radius: 10px;
+    font-weight: 700;
+    font-size: 12px;
 `
 
 function Agendado () {
     return (
         <>
             <Secao>
-                <h1>HORÁRIO AGENDADO</h1>
+                <Titulo>HORÁRIO AGENDADO</Titulo>
                 <img src="/images/validacao.svg" alt="Validação" />
                 <Botao onClick={()=> {window.location.pathname ="/"}}>Voltar ao início</Botao>
             </Secao>

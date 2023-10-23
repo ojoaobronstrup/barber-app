@@ -4,10 +4,10 @@ import styled from "styled-components"
 const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 10vh;
-    gap: 0.5em;
+    gap: 15px;
 `
 const Contato = styled.button`
     background-color: transparent;
@@ -18,11 +18,13 @@ const Contato = styled.button`
     width: 84px;
     margin-bottom: 1em;
     font-size: 10px;
+    font-weight: 300;
 `
 const Direitos = styled.h3`
     color: #FFFFFF;
     opacity: 40%;
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 300;
 `
 
 function Footer () {

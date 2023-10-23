@@ -12,7 +12,7 @@ function Home () {
     return (
         <>
             <Images>
-                <img src="/images/barbeiro.svg"></img>
+                <img src="/images/barbeiro.svg" alt="Barbeiro cortando cabelo"></img>
             </Images>
         </>
     )

@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import Footer from "../Footer"
+import { Titulo } from "../Unidades/unidades"
 
 const Secao = styled.section`
     display: flex;
@@ -29,15 +30,15 @@ const Legenda = styled.figcaption`
     justify-content: center;
     width: 150px;
     background-color: transparent;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 12px;
 `
 
 function Profissional () {
     return (
         <>
             <Secao>
-                <h2>Selecione um profissional</h2>
+                <Titulo>Selecione um profissional</Titulo>
                 <Imagens>
                     <figure>
                         <Img src="/images/profissional.svg" alt="Foto de um barbeiro" onClick={()=>{
