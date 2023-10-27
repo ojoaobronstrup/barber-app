@@ -1,7 +1,5 @@
 import styled from "styled-components"
-import { Botao } from "../Servicos/servicos"
 import Footer from "../Footer"
-import { useState } from "react"
 import { Titulo } from "../Unidades/unidades"
 
 const Secao = styled.section`
