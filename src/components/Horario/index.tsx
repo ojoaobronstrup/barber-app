@@ -28,6 +28,7 @@ const Hora = styled.h2`
     align-items: center;
     justify-content: center;
     font-weight: 700;
+    cursor: pointer;
 `
 
 function Horario () {

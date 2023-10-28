@@ -9,14 +9,17 @@ const Head = styled.div`
 const Img = styled.img`
     align-self: self-start;
 `
+const Logo = styled.img`
+    cursor: pointer;
+`
 
 function Header () {
     return (
         <Head>
             <Img src="/images/profile-icon.svg"></Img>
-            <img src="/images/logo-barbearia.svg" onClick={()=>{
+            <Logo src="/images/logo-barbearia.svg" onClick={()=>{
                 window.location.pathname="/"
-            }}></img>
+            }}></Logo>
             <Img src="/images/logo-instagram.svg"></Img>
         </Head>
     )

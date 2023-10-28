@@ -19,6 +19,7 @@ const Contato = styled.button`
     margin-bottom: 1em;
     font-size: 10px;
     font-weight: 300;
+    cursor: pointer;
 `
 const Direitos = styled.h3`
     color: #FFFFFF;

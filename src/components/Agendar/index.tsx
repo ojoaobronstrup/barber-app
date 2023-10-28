@@ -25,6 +25,7 @@ const Agende = styled.button`
     border: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    cursor: pointer;
 `
 
 function Agendar () {

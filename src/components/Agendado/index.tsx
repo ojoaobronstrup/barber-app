@@ -17,6 +17,7 @@ const Botao = styled.button`
     border-radius: 10px;
     font-weight: 700;
     font-size: 12px;
+    cursor: pointer;
 `
 
 function Agendado () {

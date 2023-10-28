@@ -28,6 +28,7 @@ const Links = styled.a`
     position: relative;
     font-size: 20px;
     font-weight: 700;
+    cursor: pointer;
 `
 const Selecionado = styled.div`
     display: block;
@@ -49,6 +50,7 @@ export const Botao = styled.button`
     font-size: 14px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 `
 
 function Servicos () {

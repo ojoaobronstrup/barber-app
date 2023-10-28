@@ -29,6 +29,7 @@ const Locais = styled.a`
     align-items: center;
     font-weight: 600;
     font-size: 20px;
+    cursor: pointer;
 `
 
 function Unidades() {
