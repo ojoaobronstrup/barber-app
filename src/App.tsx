@@ -9,74 +9,70 @@ import Data from "./Components/Data"
 import Horario from "./Components/Horario"
 import Agendamento from "./Components/Agendamento"
 import Agendado from "./Components/Agendado"
+import {Route, Routes} from "react-router-dom"
 
 function App() {
-  if(window.location.pathname === "/") {
-    return (
-      <>
-        <GlobalStyles/>
-        <Header/>
-        <Home/>
-        <Agendar/>
-      </>
-    )
-  } else if (window.location.pathname === "/unidade") {
-    return (
-      <>
-        <GlobalStyles/>
-        <Header/>
-        <Unidades/>
-      </>
-    )
-  } else if (window.location.pathname === "/unidade/servico") {
-  return(
-    <>
-      <GlobalStyles/>
-      <Header/>
-      <Servicos/>
-    </>
-  )
-} else if (window.location.pathname === "/unidade/servico/profissional") {
   return (
-    <>
-      <GlobalStyles/>
-      <Header/>
-      <Profissional/>
-    </>
+    <Routes>
+      <Route path="/" element={
+        <>
+          <GlobalStyles />
+          <Header />
+          <Home />
+          <Agendar />
+        </>
+      } />
+      <Route path="/unidade" element={
+        <>
+          <GlobalStyles />
+          <Header />
+          <Unidades />
+        </>
+      } />
+      <Route path="/unidade/servico" element={
+        <>
+          <GlobalStyles />
+          <Header />
+          <Servicos />
+        </>
+      } />
+      <Route path="/unidade/servico/profissional" element={
+        <>
+          <GlobalStyles />
+          <Header />
+          <Profissional />
+        </>
+      } />
+      <Route path="/unidade/servico/profissional/data" element={
+        <>
+          <GlobalStyles />
+          <Header />
+          <Data />
+        </>
+      } />
+      <Route path="/unidade/servico/profissional/data/horario" element={
+        <>
+          <GlobalStyles />
+          <Header />
+          <Horario />
+        </>
+      } />
+      <Route path="/unidade/servico/profissional/data/horario/agendamento" element={
+        <>
+          <GlobalStyles />
+          <Header />
+          <Agendamento />
+        </>
+      } />
+      <Route path="/unidade/servico/profissional/data/horario/agendamento/agendado" element={
+        <>
+          <GlobalStyles />
+          <Header />
+          <Agendado />
+        </>
+      } />
+    </Routes>
   )
-} else if (window.location.pathname === "/unidade/servico/profissional/data") {
-  return (
-    <>
-      <GlobalStyles/>
-      <Header/>
-      <Data/>
-    </>
-  )
-} else if (window.location.pathname === "/unidade/servico/profissional/data/horario") {
-  return (
-    <>
-      <GlobalStyles/>
-      <Header/>
-      <Horario/>
-    </>
-  )
-} else if (window.location.pathname === "/unidade/servico/profissional/data/horario/agendamento") {
-  return (
-    <>
-      <GlobalStyles/>
-      <Header/>
-      <Agendamento/>
-    </>
-  )
-} else if (window.location.pathname === "/unidade/servico/profissional/data/horario/agendamento/agendado") {
-  return (
-    <>
-      <GlobalStyles/>
-      <Header/>
-      <Agendado/>
-    </>
-  )
-}
 } 
 
 export default App
