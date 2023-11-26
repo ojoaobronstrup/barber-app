@@ -8,7 +8,14 @@
    * Styled Components
    * React Router Dom
 
-![](public/images/print-inicio.jpeg) ![](public/images/print-unidade.jpeg)
+![](public/images/print-inicio.jpeg) 
+![](public/images/print-unidade.jpeg)
+![](public/images/print-servico.jpeg)
+![](public/images/print-profissional.jpeg)
+![](public/images/print-data.jpeg)
+![](public/images/print-horario.jpeg)
+![](public/images/print-agendamento.jpeg)
+![](public/images/print-agendado.jpeg)
 
 
 --------------------------------
