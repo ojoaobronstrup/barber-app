@@ -1,3 +1,18 @@
+# BARBER APP
+> ## SOBRE
+   * Frontend de um sistema de barbearia, onde é possível agendar seu próprio horário, serviço, barbeiro e etc.
+
+> ## TECNOLOGIAS UTILIZADAS
+   * JavaScript
+   * React
+   * Styled Components
+   * React Router Dom
+
+!(public/images/print-inicio.jpeg)
+
+
+--------------------------------
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
