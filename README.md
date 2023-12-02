@@ -3,7 +3,7 @@
    * Frontend de um sistema de barbearia, onde é possível agendar seu próprio horário, serviço, barbeiro e etc.
 
 > ## TECNOLOGIAS UTILIZADAS
-   * JavaScript
+   * TypeScript
    * React
    * Styled Components
    * React Router Dom
